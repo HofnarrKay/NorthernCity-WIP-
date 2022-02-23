@@ -1,0 +1,19 @@
+syntax = "proto3";
+package ProtoMessages;
+
+enum MessageType{
+	PlayerConnected = 0;
+	ChooseCharacter = 1;
+	ChooseCharacterResult = 2;
+	Count = 3;
+}
+
+message NetworkMessage {
+	MessageType Type = 1;
+	string Message = 2;
+}
+
+message NewPlayerConnected {
+	int32 index = 1;
+	string name = 2;
+}

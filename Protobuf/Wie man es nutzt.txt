@@ -1,0 +1,11 @@
+1. Schritt, öffne Terminal.
+
+2. gib das ein:
+
+.\protoc --proto_path=C:Pfad --csharp_out=cs ""
+
+3. nach proto_path= kommt der Pfad zum Dokument
+
+4. im string hinten kommt der allgemeine Pfad + das Dokument
+
+Syntax:
